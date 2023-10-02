@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> <!--Permite ingresar un set de caracteres-->
+	<meta name="viewport" content="Widt=device-width,initial-scale=1"> <!--Permite ajustarse al dispositivo-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> <!--refencia de una API-->
+	<link rel="stylesheet" type="text/css" href="css/stylelogin1.css"> <!--Se invoca el documento css-->
+	<title>APLICATIVO</title> <!--Titulo de la pagina-->
+	<meta name="description" content="Este es un spa diseñado para ofrecer una buena atención"/> <!--Descripcion asisgnada a la pagina-->
+    <meta name="keywords" content="spa, relajación, masajes, vida tranquila, aromaticas"/> <!--Palabras claves para mejorar la busqueda de la página-->
+    <meta name="author" content="Yurany Henao"> <!--Nombre del autor de la pagina-->
+    <link rel="shortcut icon" href="Img/LOGO_SOLO-PhotoRoom.png"> <!--Permite añadirle un icono a la pagina-->
+    
+</head>
+<body>
+	<div class="container"> <!--clase que contiene todo el contenido-->
+		<div class="align">
+			<img class="logo" src="img/LOGO_SOLO-PhotoRoom.png"> <!--Logo que representa al spa-->
+			<a id="inicio" href="../index.html">Inicio</a> <!--Referencia de la pagina de inicio para poder devolverse-->
+			<div class="card">
+				<div class="head">
+					<div></div>
+					<a id="login"  href="login.html">Iniciar sesion</a> <!--Referencia de la pagina de inicio de sesion-->
+					<a id="register" class="selected" href="login_regis.html">Registrarse</a> <!--Referencia de la pagina registrarse-->
+					<div></div>
+				</div>
+				<div class="tabs">
+					<form action="agregarlogin.php"> <!--Enlace con el archivo de PHP-->
+						<div class="inputs">
+							<div class="input"> <!--Modifica los botones donde se ingresa la informacion-->
+								<input placeholder="Correo Electronico" type="text" name="Correo_Electronico"> <!--Boton para ingresar el correo-->
+								<img src="img/correo-PhotoRoom.png"> <!--Imagen referente al correo-->
+							</div>
+							<div class="input"> <!--Modifica los botones donde se ingresa la informacion-->
+								<input placeholder="Nombre de Usuario" type="text" name="usuario"> <!--Boton para ingresar el nombre-->
+								<img src="img/usuario-PhotoRoom (1).png"> <!--imagen referente a usuario-->
+							</div>
+							<div class="input"> <!--Modifica los botones donde se ingresa la informacion-->
+								<input placeholder="Contraseña" type="password" name="contrasena">  <!--Boton para el ingreso de contraseña-->
+								<img src="img/contraseña.png"> <!--Imagen referente a contraseña-->
+							</div>
+						</div>
+							<button>Registrarse</button> <!--Boton de registro-->
+							<br>
+						</div>
+						<button>Iniciar sesion</button> <!--Boton de inicio de sesion-->
+						
+					</form>
+				</a>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script> <!--enlace con archivo javascript-->
+		<script src="js/index.js"></script> <!--enlace con archivo javascript-->
+	</div>
+</body>
+</html>

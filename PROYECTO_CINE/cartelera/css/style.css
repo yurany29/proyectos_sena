@@ -1,0 +1,92 @@
+*{
+    margin: 0; /*Margen de la pagina*/
+    padding: 0; /*espacio de la pagina*/
+    box-sizing: border-box; /*Se especifica el borde, el ancho y el alto de un elemento*/
+ }
+ h2{
+    text-align: center; /*Centra el texto*/
+    background-color: #6f0505d5; /*Color de fondo del texto*/
+    padding: 10px;  /*espacio del texto*/
+    color: rgb(192, 192, 192);/*Color del texto*/
+ }
+
+ body{
+    font-family:Georgia, 'Times New Roman', Times, serif; /*Tipo de letra e la pagina*/
+    background-color:rgb(17, 17, 17); /*Color de fondo de la pagina*/
+ }  
+ .inicio img{
+    filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(273deg) brightness(105%) contrast(108%); /*Ayuda a cambiar el color de los formato png*/
+    width: 40%; /*Ancho del logo*/
+    height: 70%; /*Altura del logo*/
+    float: left; /*Para que el logo se posicione en la izquierda*/
+    padding: 14px; /*Espacio de el logo*/
+ 
+ }
+ .header{
+    background-image: url(../img/pexels-tima-miroshnichenko-7991375.jpg); /*Imagen del fondo de la barra de navegacion*/
+    background-size: 84%; /*Tamaño de la imagen de fondo*/
+    width: 100%;/*Ancho de la imagen de fondo*/
+    height: 100px;/*Altura de la imagen de fondo*/
+    clear: both;/*Establece comportamiento especial para algunelemento*/
+    content: "";/*Genera contenido de forma dinamica*/
+    display:table;/*Asigna comportamiento a una tabla de elementos*/
+ }
+
+ section{
+    display: flex; /*Ayuda a colocar la seccion como si fueran celdas de tablas*/
+    width: 600px; /*Ancho de la seccion*/
+    height: 430px; /*Altura de la seccion*/
+  }
+  section img{
+    width: 0px; /*Ancho de la imagen*/
+    flex-grow: 1; /*Ayuda a ocupar todo el ancho que pueda*/
+    object-fit: cover; /*Cubre todo el espacio*/
+    opacity: .8; /*Agrega opacidad a la imagen*/
+    transition: .5s ease; /*Trancision para realizar la animacion*/
+
+  }
+  section img:hover{
+    cursor:crosshair; /*Forma del cursor*/
+    width: 300px; /*Ancho de la imagen*/
+    opacity: 1; /*Agrega opacidad a la imagen*/
+    filter: contrast(120%); /*Contraste de la imagen*/
+  }
+ nav{
+    float: right; /*Ubica la barra de navegacion a la derecha*/
+ }
+ nav ul{
+    width: 100%; /*Ancho del navegador del menu*/
+    height: 70%; /*Altura de la barra de navegacion*/
+    list-style-type:none; /*Par quitar los puntos de las viñetas*/
+    text-align:center; /*Para centrar la lista*/
+ }
+ nav li{
+    display: inline-flex; /*Mueve los menu y los alinea en seguida*/
+ }
+ nav a{
+    text-decoration: none; /*Quita el color azul*/
+    color: #ffffff; /*Color letra menus*/
+    padding: 10px; /*Espacio de los menu*/
+    width:150px; /*Ancho de la tabla menu*/
+    font-size:24px;/*Tamaño de la letra*/
+ }
+ nav li:hover{
+    background-color: #6f0505d5; /*Color cuando se pasa por encima*/
+ }
+ footer{
+    width: 100%; /*Ancho del menu*/
+    height: 100px; /*Darle espacio superior*/
+    background-color: gray; /*Color del fondo*/
+    color: #ffffff; /*Color del texto*/
+    margin-top: 20px; /*Darle espacio superior*/
+ }
+ footer p{
+    text-align: center; /*Texto centrado*/
+    padding: 0px; /*Separar del borde*/
+ }
+ footer img{
+    display:block; /*Colocar la imagen en el centro*/
+    margin: auto;/*Margen automatica*/
+    width: 40px; /*Ancho del logo*/
+    height: 40px;/*Largo del logo*/
+ }

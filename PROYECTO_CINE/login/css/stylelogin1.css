@@ -1,0 +1,201 @@
+* {
+	box-sizing: border-box; /*Para que los elementos mantengan su tamaño*/
+	margin: 0; /*Margen del documento*/
+	padding: 0; /*Espacio en el documento*/
+	text-decoration: none; /*No hay decoracion de texto*/
+	font-family: "Roboto"; /*Fuente de la letra*/
+	outline: none; /*No hay linea de contorno
+	border: none; /*No contiene borde*/
+}
+
+body {
+	height: 100%; /*Alto de la imagen*/
+	background-image: url(../img/pexels-dmitry-demidov-3921045.jpg); /*Fondo de la pagina establecido con imagen*/
+	background-size: cover; /*Ajusta la imagen de acuerdo al ancho de la pantalla*/
+	animation: cambiarimagen 30s infinite; /*Permite que la animacion cambie cada 30 seg de manera infinita*/
+	object-fit: cover;
+	position: center center;  /*Posicion inicial de la imagen centrado*/
+}
+
+.align {
+	height: 100%; /*Alto de la imagen*/
+	display: flex; /*coloca tablas adaptables*/
+	align-items: center; /*alinea el elemento en el centro*/
+	justify-content: center; /*espacio distribuido en el centro*/
+	flex-direction: column; /*Direccion en que se ordena*/
+	padding-bottom: 15px; /*Espacio que existe en el boton*/
+}
+
+.logo {
+	width: 120px; /*Ancho de la imagen*/
+	padding-top: 14px; /*espacio entre el logo y la margen*/
+	height: 127px;
+}
+#inicio{
+	width: 5%; /*Ancho de el inicio*/
+	height: 50%; /*Alto del inicio*/
+	border: 1px solid rgba(0, 0, 0, 0.349); /*borde del recuadro color negro*/
+	background-color:#38373762; /*color de fondo del recuadro*/
+	text-align: center; /*Texto centrado*/
+	color:#ffffff; /*color del texto*/
+	border-radius: 8px; /*redondea las puntas del recuador*/
+}
+
+.card {
+	margin-top: 40px;  /*margen superior del boton*/
+	height: 100%; /*Alto del boton*/
+	max-height: 446px; /*define la altura maxima del boton*/
+	width: 396px; /*Ancho del boton*/
+	background: #57555593; /*color de fondo del boton*/
+	border: 1px solid #4d4a4a; /*color del texto*/
+	border-radius: 10px;  /*redondea las puntas del boton*/
+	overflow: hidden; /*permite que sobresslga*/
+	transition: max-height 0.2s; /*trancision maxima de 2 seg*/
+}
+
+.extend {
+	max-height: 480px; /*Altura maxima*/
+}
+
+.head {
+	width: 100%; /*Ancho del elemento*/
+	display: flex;  /*coloca tablas adaptables*/
+	height: 72px; /*Alto del elemento*/
+	border-bottom: 1px solid #373737; /*define el borde del elemento*/
+	justify-content: space-between; /*espacio distribuido entre ellos*/
+}
+
+.head a {
+	height: 100%; /*Alto de la imagen*/
+	display: flex; /*coloca tablas adaptables*/
+	align-items: center; /*alinea el elemento en el centro*/
+	justify-content: center;  /*espacio distribuido en el centro*/
+	color: rgb(255, 255, 255); /*color del texto*/
+	font-size: 20px; /*tamaño de la letra*/
+	font-weight: 500; /*grosor del texto*/
+}
+
+.head .selected {
+	position: relative; /*elemento pocisionado*/
+	color: #ffffff; /*color del texto*/
+	font-weight: 700; /*grosor del texto*/
+}
+
+.head .selected:after {
+	position: absolute; /*se pocisiona en el inicio*/
+	content: ""; /*contenido de manera dinamica*/
+	bottom: 0; /*posicion del elemento*/
+	left: 0; /*posicion del elemento*/
+	height: 5px; /*Largo del elemetno*/
+	width: 100%; /*Ancho del elemento*/
+	background: #0c02449f; /*Color del fondo*/
+	border-radius: 99px 99px 0 0; /*redondea las puntas del recuador*/
+}
+
+.tabs {
+	height: calc(100% - 72px); /*Largo del elemetno*/
+	display: flex;  /*coloca tablas adaptables*/
+}
+
+form {
+	width: 100%; /*Ancho del elemento*/
+	height: 100%; /*Ancho del elemento*/
+	flex-shrink: 0; /*rellena el contenedor*/
+	padding: 44px 38px; /*Espacio que contiene*/
+	display: flex; /*coloca tablas adaptables*/
+	flex-direction: column; /*direccion donde se ordena los elementos*/
+	justify-content: space-between; /*espacio distribuido entre ellos*/
+	align-items: center; /*alinea el elemento en el centro*/
+	position: relative; /*elemento pocisionado*/
+	right: 0; /*posicion del elemento*/
+	transition: right 0.2s; /*tiempo de la transcicion*/
+}
+
+.extend form {
+	right: 100%; /*posicion del elemento a la derecha*/
+}
+
+.inputs {
+	width: 100%; /*Ancho del elemento*/
+	padding-top: 6px;  /*espacio entre el boton*/
+}
+
+.input {
+	position: relative; /*elemento pocisionado*/
+	margin-bottom: 20px;
+	width: 100%; /*Ancho del elemento*/
+	display: flex; /*coloca tablas adaptables*/
+	align-items: center; /*alinea el elemento en el centro*/
+}
+.input ::placeholder{
+	color:#d3cdcdd8; /*color del texto*/
+}
+
+.input input {
+	width: 100%; /*Ancho del boton*/
+	font-size: 17px; /*tamaño de la letra*/
+	background: #2e282ec0; /*color de fondo del boton*/
+	border-radius: 8px; /*redondea el borde*/
+	padding: 16px 18px 16px 51px; /*espacio que tiene el boton*/
+	color: rgb(255, 255, 255); /*color del texto*/
+}
+
+.input img {
+	filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(273deg) brightness(105%) contrast(108%);/*Ayuda a cambiar el color de los formato png*/
+	width: 25px; /*Ancho de la imagen*/
+	position: absolute; /*poder modificar la pocision*/
+	left: 19px; /*posicion del elemento a la izquierda*/
+}
+
+.checkbox {
+	height: 40px; /*Ancho del elemento*/
+	display: flex; /*coloca tablas adaptables*/
+	align-items: center; /*Centra los elementos de la caja*/
+	position: relative; /*Se encuentra segun su pocision normal*/
+	cursor: pointer; /*Forma del cursor*/
+}
+
+.checkbox input {
+	position: absolute; /*poder modificar la pocision*/
+	opacity: 0; /*Opacidad del elemetno*/
+	height: 0; /*Ancho del elemento*/
+	width: 0; /*Ancho de la imagen*/
+}
+
+.checkbox span {
+	display: flex; /*coloca tablas adaptables*/
+	align-items: center;  /*Centra los elementos de la caja*/
+	color: rgb(175, 173, 173); /*Color del texto*/
+	font-size: 16px; /*Tamaño del texto*/
+	user-select: none; /*Hace que el usuario no pueda seleccionar el texto*/
+}
+
+.checkbox span:before {
+	content: "";/*Genera contenido de forma dinamica*/
+	width: 22px; /*Ancho del elemento*/
+	height: 22px; /*Altura del elemento*/
+	border-radius: 6px; /*Permite redondear las puntas del cuadro*/
+	margin-right: 16px; /*Espacio a la derecha del cuadro*/
+	background-color: #666464; /*Color de fondo*/
+}
+
+.checkbox:hover input ~ span:before {
+	background-color: #1b1b1b; /*Color del fondo al posicionar el cursor*/
+}
+
+.checkbox input:checked ~ span:before {
+	background-image: url(../img/checked.png); /*Imagen de fondo*/
+	background-size: cover; /*La imagen conserva su tamaño original*/
+}
+
+.card button {
+	display: block; /*Ocupa el ancho disponible*/
+	background: #20184de7; /*Color de fondo del boton*/
+	padding: 14px 52px; /*Espacio del boton*/
+	border-radius: 12px; /*Redondea las puntas del cuadro*/
+	color: #ffffff; /*Color del texto*/
+	font-weight: 700; /*Grosor del texto*/
+	font-size: 21px; /*Tamaño del texto*/
+	cursor: pointer; /*Forma del cursor*/
+}
+

@@ -1,0 +1,118 @@
+*{
+   margin: 0;/*Margen de la pagina*/
+   padding: 0; /*espacio de la pagina*/
+   box-sizing: border-box;/*Se especifica el borde, el ancho y el alto de un elemento*/
+ }
+ h3{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*Tipo de letra del texto*/
+   text-align: center; /*Centra el texto*/
+   background-color:  #6f0505d5; /*Color de fondo del texto*/
+   padding: 10px; /*espacio del texto*/
+   color: rgb(192, 192, 192); /*Color del texto*/
+ }
+ 
+ body{
+   font-family:Georgia, 'Times New Roman', Times, serif; /*Tipo de letra e la pagina*/
+   background-color:rgb(17, 17, 17); /*Color de fondo de la pagina*/
+   color:blanchedalmond /*Color del texto*/
+ }  
+ .inicio img{
+   filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(273deg) brightness(105%) contrast(108%); /*Ayuda a cambiar el color de los formato png*/
+   width: 40%; /*Ancho del logo*/
+   height: 70%; /*Altura del logo*/
+   float: left; /*Para que el logo se posicione en la izquierda*/
+   padding: 8px; /*Espacio de el logo*/
+ 
+ }
+ .header{
+   background-image: url(../img/pexels-tima-miroshnichenko-7991375.jpg); /*Imagen del fondo de la barra de navegacion*/
+   background-size: 84%; /*Tamaño de la imagen de fondo*/
+   width: 100%; /*Ancho de la imagen de fondo*/
+   height: 100%; /*Altura de la imagen de fondo*/
+   clear: both; /*Establece comportamiento especial para algunelemento*/
+   content: ""; /*Genera contenido de forma dinamica*/
+   display:table; /*Asigna comportamiento a una tabla de elementos*/
+ }
+
+ nav{
+   float: right; /*Ubica la barra de navegacion a la derecha*/
+ }
+ nav ul{
+   width: 100%; /*Ancho del navegador del menu*/
+   height: 70%; /*Altura de la barra de navegacion*/
+   list-style-type:none; /*Par quitar los puntos de las viñetas*/
+   text-align:center; /*Para centrar la lista*/
+ }
+ nav li{
+   display: inline-flex; /*Mueve los menu y los alinea en seguida*/
+ }
+ nav a{
+   text-decoration: none; /*Quita el color azul*/
+   color: #ffffff; /*Color letra menus*/
+   padding: 10px; /*Espacio de los menu*/
+   width:150px; /*Ancho de la tabla menu*/
+   font-size:24px;/*Tamaño de la letra*/
+ }
+ nav li:hover{
+   background-color: #6f0505d5; /*Color cuando se pasa por encima*/
+ }
+ 
+
+.texto{
+   display: flex; /*Ajusta el texto al lado del video*/
+   font-size: 16px; /*Tamaño del texto*/
+   float:right; /*Permite que el texto se pocisione a la derecha*/
+   margin-right: 8%; /*Espacio qu etiene el texto el la parte derecha*/
+   padding: 5px; /*Espacio del texto*/
+   text-align:center; /*Centra el texto*/
+   color: #ffffff; /*Color del texto*/
+}
+
+#barbie{
+   width: 30%; /*Ancho del video*/
+   height: 50%; /*Altura del video*/
+   margin-left: 10%; /*Espacio a la izquierda del video*/
+}
+#elementos{
+   width: 30%;/*Ancho del video*/
+   height: 50%;/*Altura del video*/
+   margin-left: 10%;/*Espacio a la izquierda del video*/
+}
+#megalodon{
+   width: 30%;/*Ancho del video*/
+   height: 50%;/*Altura del video*/
+   margin-left: 10%;/*Espacio a la izquierda del video*/
+}
+#peterpan{
+   width: 30%;/*Ancho del video*/
+   height: 50%;/*Altura del video*/
+   margin-left: 10%;/*Espacio a la izquierda del video*/
+}
+#transformer{
+   width: 30%;/*Ancho del video*/
+   height: 50%;/*Altura del video*/
+   margin-left: 10%;/*Espacio a la izquierda del video*/
+}
+#trolls{
+   width: 30%;/*Ancho del video*/
+   height: 50%;/*Altura del video*/
+   margin-left: 10%;/*Espacio a la izquierda del video*/
+}
+ footer{
+   width: 100%; /*Ancho del menu*/
+   height: 100px; /*Darle espacio superior*/
+   background-color: gray; /*Color del fondo*/
+   color: white; /*Color del texto*/
+   margin-top: 20px; /*Darle espacio superior*/
+ }
+ footer p{
+   text-align: center; /*Texto centrado*/
+   padding: 0px; /*Separar del borde*/
+ }
+ footer img{
+   display:block; /*Colocar la imagen en el centro*/
+   margin: auto;/*Margen automatica*/
+   width: 40px; /*Ancho del logo*/
+   height: 40px;/*Largo del logo*/
+ }
+ 
