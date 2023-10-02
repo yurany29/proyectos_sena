@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+
+    background-image: url('../img/registrar.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(25, 25, 25, 0.792);
+    border-radius: 10px;
+    width: 30%;
+    height: 10%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 232, 220, 0.5);
+    margin-top: 5vw;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    font-size: 30px;
+    color: #ebebeb;
+}
+
+form {
+    text-align: center;
+    height: 500px;
+    color: #ccc;
+}
+
+.form-group {
+    margin: 10px 0;
+    text-align: left;
+    height: 15%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 4px;
+    background-color: #000;
+    color: #ccc;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: #28a745;
+}
+
+.add-btn:hover {
+    background-color: #23873a;
+}
+
+.cancel-btn{
+    background-color: #8f0303;
+
+}
+.cancel-btn:hover{
+    background-color: #580202;
+
+}

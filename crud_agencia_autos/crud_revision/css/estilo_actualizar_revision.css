@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+
+    background-image: url('../img/editar.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(137, 137, 137, 0.554);
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(2, 141, 134, 0.5);
+    margin-top: 2%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    font-size: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(24, 24, 24, 0.761);
+    color: #e8e8e8;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #007bff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.menu-button {
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+.menu-button:hover{
+    background-color: #131313;
+}
+input[type="submit"]:hover{
+    background-color: #005ec2;
+}
+
+input[type="text"]::selection{
+    background-color: rgba(1, 105, 91, 0.761);
+}

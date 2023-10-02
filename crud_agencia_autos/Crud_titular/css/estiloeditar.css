@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+
+    background-image: url('../img/editar_titular.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgba(22, 22, 22, 0.526);
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 238, 0.5);
+    margin-top: 5%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px;
+    font-size: 30px;
+    color: #d9d9d9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: #dedede;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #ccc;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #007bff;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="submit"]:hover{
+    background-color: #4e9df2;
+}
+
+.menu-button {
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin: 0;
+    color: #fff;
+    background-color: #000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #cccccc89;
+}
+
+.menu-button:hover{
+    background-color: #232323;
+}
